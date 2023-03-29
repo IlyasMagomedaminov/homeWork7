@@ -1,5 +1,3 @@
-import java.util.Arrays;
-
 public class Main {
     public static void main(String[] args) {
         task1();
@@ -17,11 +15,11 @@ public class Main {
 
         System.out.println(fox[1]);
 
-        double[] cat = new double[]{1.57, 7.654, 9.986};
+        double[] cat = {1.57, 7.654, 9.986};
 
         System.out.println(cat[2]);
 
-        String[] dog = new String[]{"hello","world","how","are","you"};
+        String[] dog = {"hello","world","how","are","you"};
 
         System.out.println(dog[3]+"\n");
     }
@@ -32,44 +30,70 @@ public class Main {
         double[] cat = new double[]{1.57, 7.654, 9.986};
         String[] dog = new String[]{"hello","world","how","are","you"};
 
-        System.out.println(Arrays.toString(fox));
-
-        System.out.println(Arrays.toString(cat));
-
-        System.out.println(Arrays.toString(dog));
-
+        for (int i = 0;i < fox.length;i++){
+            System.out.print(fox[i]);
+            if (i != fox.length - 1){
+                System.out.print(",");
+            }
+        }
         System.out.println();
+        for (int i = 0;i < cat.length;i++){
+            System.out.print(cat[i]);
+            if (i != cat.length - 1){
+                System.out.print(",");
+            }
+        }
+        System.out.println();
+        for (int i = 0;i < dog.length;i++){
+            System.out.print(dog[i]);
+            if (i != dog.length - 1){
+                System.out.print(",");
+            }
+        }
+        System.out.println("\n");
     }
     public static void task3(){
         System.out.println("Задача 3");
 
-        int[] fox = new int[]{1,2,3};
-        double[] cat = new double[]{1.57, 7.654, 9.986};
-        String[] dog = new String[]{"hello","world","how","are","you"};
+        int[] fox ={1,2,3};
+        double[] cat ={1.57, 7.654, 9.986};
+        String[] dog ={"hello","world","how","are","you"};
 
         for (int i = fox.length - 1;i >= 0;i--){
-            System.out.print(fox[i] + ", ");
+            System.out.print(fox[i]);
+            if (i != 0){
+                System.out.print(",");
+            }
         }
         System.out.println();
-        for (int i = fox.length - 1;i >= 0;i--){
-            System.out.print(cat[i] + ", ");
+        for (int i = cat.length - 1;i >= 0;i--){
+            System.out.print(cat[i]);
+            if (i != 0){
+                System.out.print(",");
+            }
         }
         System.out.println();
-        for (int i = fox.length - 1;i >= 0;i--) {
-            System.out.print(dog[i] + ", ");
+        for (int i = dog.length - 1;i >= 0;i--) {
+            System.out.print(dog[i]);
+            if (i != 0){
+                System.out.print(",");
+            }
         }
         System.out.println("\n");
     }
     public static void task4(){
         System.out.println("Задача 4");
 
-        int[] fox = new int[]{1,2,3,4,5,6,7};
+        int[] fox ={1,2,3,4,5,6,7};
 
         for (int i = 0;i < fox.length;i++){
             if (fox[i] % 2 == 0){
-                System.out.print(fox[i] + ",");
+                System.out.print(fox[i]);
             }else{
-                System.out.print(fox[i] + 1 + ",");
+                System.out.print(fox[i] + 1);
+            }
+            if (i != fox.length -1){
+                System.out.print(",");
             }
         }
     }
