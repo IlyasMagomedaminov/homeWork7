@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class Main {
     public static void main(String[] args) {
         task1();
@@ -30,18 +32,13 @@ public class Main {
         double[] cat = new double[]{1.57, 7.654, 9.986};
         String[] dog = new String[]{"hello","world","how","are","you"};
 
-        for(int i = 0;i < fox.length;i++){
-            System.out.print(fox[i] + ", ");
-        }
+        System.out.println(Arrays.toString(fox));
+
+        System.out.println(Arrays.toString(cat));
+
+        System.out.println(Arrays.toString(dog));
+
         System.out.println();
-        for(int i = 0;i < cat.length;i++){
-            System.out.print(cat[i] + ", ");
-        }
-        System.out.println();
-        for(int i = 0;i < dog.length;i++){
-            System.out.print(dog[i] + ", ");
-        }
-        System.out.println("\n");
     }
     public static void task3(){
         System.out.println("Задача 3");
